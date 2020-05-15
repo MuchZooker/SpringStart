@@ -1,0 +1,17 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka/
+spring:
+  application:
+    name: product
+  datasource:
+    url: jdbc:mysql://localhost:3306/springcloud?characterEncoding=utf-8&useSSL=false&useUnicode=true&serverTimezone=UTC
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 9101
+mybatis:
+  mapper-locations: classpath*:/mybatis/*.xml
+  type-aliases-package: atex.dev.spring.product.dto
