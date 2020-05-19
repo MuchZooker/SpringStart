@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eurekaserver" />
+        <module name="order" />
         <module name="product" />
         <module name="SpringStart" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eurekaserver" target="1.8" />
+      <module name="order" target="1.8" />
       <module name="product" target="1.8" />
       <module name="SpringStart" target="1.5" />
     </bytecodeTargetLevel>
