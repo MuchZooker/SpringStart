@@ -19,7 +19,7 @@ public class ProductController {
     @RequestMapping(value = "/products", method = RequestMethod.GET)
     public String queryProductsInfo() {
 
-        productService.selectProductInfo();
+//        productService.selectProductInfo();
         return "get success";
     }
 
