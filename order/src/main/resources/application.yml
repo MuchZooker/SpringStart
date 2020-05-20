@@ -18,3 +18,8 @@ eureka:
 mybatis:
   mapper-locations: classpath*:/mybatis/*.xml
   type-aliases-package: atex.dev.spring.order.dto
+
+
+PRODUCT:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule

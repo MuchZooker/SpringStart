@@ -20,7 +20,7 @@ public class ProductController {
     public String queryProductsInfo() {
 
 //        productService.selectProductInfo();
-        return "get success";
+        return "get success 1";
     }
 
 }
