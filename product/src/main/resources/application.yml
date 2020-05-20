@@ -6,9 +6,9 @@ spring:
   application:
     name: product
   datasource:
-    url: jdbc:mysql://172.17.3.51:3306/springcloud?characterEncoding=utf-8&useSSL=false&useUnicode=true&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/springcloud?characterEncoding=utf-8&useSSL=false&useUnicode=true&serverTimezone=UTC
     username: root
-    password: 12345678
+    password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
 server:
   port: 9101

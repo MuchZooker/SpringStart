@@ -13,7 +13,7 @@ public class OrderController {
     @Autowired
     OrderService orderService;
 
-    @RequestMapping(value = "/oderInfo",method = RequestMethod.GET)
+    @RequestMapping(value = "/orders",method = RequestMethod.GET)
     public String orderInfo(){
         orderService.selectOrders();
         return "测试接口成功";
