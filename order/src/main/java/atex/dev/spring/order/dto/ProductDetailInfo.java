@@ -1,9 +1,9 @@
-package atex.dev.spring.product.dto;
+package atex.dev.spring.order.dto;
 
 /**
- * Created by atex on 2020/5/15.
+ * Created by atex on 2020/6/15.
  */
-public class ProductInfoDto {
+public class ProductDetailInfo {
 
     private int id;
     private String name;
@@ -33,11 +33,4 @@ public class ProductInfoDto {
         this.price = price;
     }
 
-    @Override
-    public String toString() {
-        return "{"+"\""+"id"+"\""+":"+id+","
-                +"\""+"name"+"\""+":"+"\""+name+"\""+","
-                +"\""+"price"+"\""+":"+price+"}";
-
-    }
 }
