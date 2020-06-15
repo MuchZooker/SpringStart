@@ -22,4 +22,9 @@ public class ProductServiceImpl implements ProductService{
     public List<ProductInfoDto> selectProductInfo() {
         return productInfoDao.queryAllProducts();
     }
+
+    @Override
+    public void deleteProduct(String productId,int number) {
+         productInfoDao.deleteProduct(productId,number);
+    }
 }

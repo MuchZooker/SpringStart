@@ -11,4 +11,5 @@ public interface ProductService {
 
 
     List<ProductInfoDto> selectProductInfo();
+   void deleteProduct(String productId,int number);
 }

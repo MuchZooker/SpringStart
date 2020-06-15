@@ -26,4 +26,11 @@ public class OrderController {
         List<ProductDetailInfo> productDetailInfoList=new Gson().fromJson(productFeginService.queryProductsInfo(),new TypeToken<List<ProductDetailInfo>>(){}.getType());
         return "获取到商品数量"+productDetailInfoList.size();
     }
+
+
+    @RequestMapping(value = "/create",method = RequestMethod.GET)
+    public String addOrder(){
+
+        return productFeginService.deleteProduct("10000001",1);
+    }
 }

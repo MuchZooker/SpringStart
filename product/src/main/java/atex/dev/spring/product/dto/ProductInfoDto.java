@@ -8,6 +8,7 @@ public class ProductInfoDto {
     private int id;
     private String name;
     private double price;
+    private int num;
 
     public int getId() {
         return id;
@@ -31,6 +32,14 @@ public class ProductInfoDto {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public int getNum() {
+        return num;
+    }
+
+    public void setNum(int num) {
+        this.num = num;
     }
 
     @Override

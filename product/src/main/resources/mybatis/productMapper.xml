@@ -8,4 +8,8 @@
     >
         SELECT * FROM tb_product
     </select>
+    <select id="deleteProduct"
+    >
+        UPDATE  tb_product SET num=num-#{number},updateTime = DATE_FORMAT(NOW(),'%Y-%m-%d %H:%m:%s') WHERE productId=#{productId}
+    </select>
 </mapper>

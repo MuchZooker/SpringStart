@@ -1,6 +1,7 @@
 package atex.dev.spring.product.dao;
 
 import atex.dev.spring.product.dto.ProductInfoDto;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -9,4 +10,6 @@ import java.util.List;
  */
 public interface ProductInfoDao {
     List<ProductInfoDto> queryAllProducts();
+
+    void deleteProduct(@Param("productId")String productId,@Param("number") int number);
 }
