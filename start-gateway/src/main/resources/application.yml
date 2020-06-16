@@ -1,0 +1,20 @@
+
+spring:
+  application:
+    name: start-gateway
+server:
+  port: 8200
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka/
+zuul:
+  routes:
+    api-a:
+      path: /start/**
+      service-id: order
+    api-b:
+          path: /start/**
+          service-id: product
+

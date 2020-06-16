@@ -8,5 +8,6 @@
     <file url="file://$PROJECT_DIR$/order/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/product" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/product/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/start-gateway" charset="UTF-8" />
   </component>
 </project>
