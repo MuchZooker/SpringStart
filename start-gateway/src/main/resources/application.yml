@@ -8,13 +8,13 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:9001/eureka/
+      defaultZone: http://172.29.6.56:9001/eureka/
 zuul:
   routes:
     api-a:
       path: /start/**
       service-id: order
     api-b:
-          path: /start/**
-          service-id: product
+      path: /start/**
+      service-id: product
 
